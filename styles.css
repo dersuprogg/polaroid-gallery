@@ -29,6 +29,7 @@ img {
   background-color: #43766c;
   box-shadow: 0 6px 6px 6px rgba(0, 0, 0, 0.35);
   position: relative;
+  transition: all 0.3s;
 }
 
 .images {
@@ -76,4 +77,8 @@ img {
   right: 0;
   transform: rotate(-35deg) translate(-80%, -240%);
   opacity: 0.85;
+}
+
+.image:hover {
+  transform: scale(1.1) rotate(0);
 }
