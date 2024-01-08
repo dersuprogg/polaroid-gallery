@@ -25,9 +25,10 @@ img {
 }
 
 .image {
-  overflow: hidden;
   padding: 1rem;
   background-color: #43766c;
+  box-shadow: 0 6px 6px 6px rgba(0, 0, 0, 0.35);
+  position: relative;
 }
 
 .images {
@@ -42,6 +43,7 @@ img {
   text-align: center;
   padding: 0.5rem;
   font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 .image:nth-child(odd) {
@@ -50,4 +52,28 @@ img {
 
 .image:nth-child(even) {
   transform: rotate(-7deg);
+}
+
+.image:nth-child(even)::after {
+  content: "";
+  display: inline-block;
+  background-color: #f8fae5;
+  padding: 1rem 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(35deg) translate(30%, -70%);
+  opacity: 0.85;
+}
+
+.image:nth-child(odd)::after {
+  content: "";
+  display: inline-block;
+  background-color: #f8fae5;
+  padding: 1rem 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(-35deg) translate(-80%, -240%);
+  opacity: 0.85;
 }
