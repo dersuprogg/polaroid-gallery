@@ -6,6 +6,8 @@
 img {
   display: block;
   width: 100%;
+  border-radius: 1rem;
+  border: 2px solid #f8fae5;
 }
 
 .gallery {
@@ -24,9 +26,8 @@ img {
 
 .image {
   overflow: hidden;
-  border-top-right-radius: 11px;
-  border-top-left-radius: 11px;
-  background-color: #fff;
+  padding: 1rem;
+  background-color: #43766c;
 }
 
 .images {
@@ -37,9 +38,16 @@ img {
 }
 
 .animal-name {
-  background-color: #43766c;
   color: #f8fae5;
   text-align: center;
   padding: 0.5rem;
   font-size: 2rem;
+}
+
+.image:nth-child(odd) {
+  transform: rotate(7deg);
+}
+
+.image:nth-child(even) {
+  transform: rotate(-7deg);
 }
