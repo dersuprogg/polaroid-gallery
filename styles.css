@@ -94,4 +94,7 @@ img {
   .image {
     width: 50%;
   }
+  .gallery {
+    height: auto;
+  }
 }
